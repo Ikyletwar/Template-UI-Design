@@ -212,13 +212,26 @@
 
 **Cara A: Via Git CLI**
 ```bash
-cd "C:\Users\MyBook Hype\Downloads\WORKSPACE\UI"
+# GANTI path di bawah dengan folder project kamu
+cd "path/to/folder/project/kamu"
+
 git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/NAMA_REPO.git
 git push -u origin main
+```
+
+**Contoh path:**
+```bash
+# Windows
+cd "C:\Users\John\Documents\landing-page"
+cd "D:\Projects\my-website"
+
+# Mac/Linux
+cd "/Users/john/Documents/landing-page"
+cd "/home/john/projects/my-website"
 ```
 
 **Cara B: Via Website**
@@ -716,7 +729,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 ---
 
 <p align="center">
-  <small>🇮🇩 Dibuat dengan ❤️ oleh developer Indonesia untuk developer Indonesia</small>
+  <small>🇮🇩 Dibuat oleh <strong>Nihongo</strong> untuk developer Indonesia</small>
 </p>
 
 <p align="center">
