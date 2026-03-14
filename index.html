@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nexus AI - Build Intelligence</title>
+  <title>Zero - Bangun Kecerdasan Buatan</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -382,24 +382,24 @@
       <a href="#" class="flex items-center gap-3">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--accent)] to-[#0088ff] flex items-center justify-center">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-black">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-            <path d="M2 17l10 5 10-5"/>
-            <path d="M2 12l10 5 10-5"/>
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="16"/>
+            <line x1="8" y1="12" x2="16" y2="12"/>
           </svg>
         </div>
-        <span class="font-display font-bold text-xl">Nexus</span>
+        <span class="font-display font-bold text-xl">Zero</span>
       </a>
       
       <div class="hidden md:flex items-center gap-8">
-        <a href="#features" class="nav-link text-sm font-medium">Features</a>
-        <a href="#developers" class="nav-link text-sm font-medium">Developers</a>
-        <a href="#pricing" class="nav-link text-sm font-medium">Pricing</a>
-        <a href="#docs" class="nav-link text-sm font-medium">Docs</a>
+        <a href="#fitur" class="nav-link text-sm font-medium">Fitur</a>
+        <a href="#pengembang" class="nav-link text-sm font-medium">Pengembang</a>
+        <a href="#harga" class="nav-link text-sm font-medium">Harga</a>
+        <a href="#dokumentasi" class="nav-link text-sm font-medium">Dokumentasi</a>
       </div>
       
       <div class="flex items-center gap-4">
-        <button class="btn-secondary hidden sm:block text-sm">Sign In</button>
-        <button class="btn-primary text-sm">Get Started</button>
+        <button class="btn-secondary hidden sm:block text-sm">Masuk</button>
+        <button class="btn-primary text-sm">Mulai Gratis</button>
       </div>
     </div>
   </nav>
@@ -417,26 +417,26 @@
       <div class="reveal mb-6">
         <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--border)] bg-[var(--card)] text-sm">
           <span class="w-2 h-2 rounded-full bg-[var(--accent)] animate-pulse"></span>
-          Now available for enterprise
+          Kini tersedia untuk perusahaan
         </span>
       </div>
       
       <h1 class="hero-title font-display mb-8 reveal reveal-delay-1">
-        Build AI products<br>
-        <span class="gradient-text">10x faster</span>
+        Bangun produk AI<br>
+        <span class="gradient-text">10x lebih cepat</span>
       </h1>
       
       <p class="text-lg md:text-xl text-[var(--muted)] max-w-2xl mx-auto mb-10 reveal reveal-delay-2">
-        The complete AI infrastructure for developers. Ship intelligent features in minutes, not months. No ML expertise required.
+        Infrastruktur AI lengkap untuk pengembang. Luncurkan fitur cerdas dalam hitungan menit, bukan bulan. Tanpa perlu keahlian ML.
       </p>
       
       <div class="flex flex-col sm:flex-row gap-4 justify-center reveal reveal-delay-3">
-        <button class="btn-primary text-base">Start Building Free</button>
+        <button class="btn-primary text-base">Mulai Bangun Gratis</button>
         <button class="btn-secondary text-base flex items-center justify-center gap-2">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polygon points="5 3 19 12 5 21 5 3"/>
           </svg>
-          Watch Demo
+          Tonton Demo
         </button>
       </div>
       
@@ -450,14 +450,14 @@
             <span class="text-[var(--muted)] text-xs ml-4">api.js</span>
           </div>
           <div class="code-content" id="code-content">
-            <div class="code-line"><span class="syntax-keyword">import</span> { Nexus } <span class="syntax-keyword">from</span> <span class="syntax-string">'@nexus/ai'</span>;</div>
+            <div class="code-line"><span class="syntax-keyword">import</span> { Zero } <span class="syntax-keyword">from</span> <span class="syntax-string">'@zero/ai'</span>;</div>
             <div class="code-line"></div>
-            <div class="code-line"><span class="syntax-keyword">const</span> client = <span class="syntax-keyword">new</span> <span class="syntax-function">Nexus</span>({ apiKey: process.env.NEXUS_KEY });</div>
+            <div class="code-line"><span class="syntax-keyword">const</span> client = <span class="syntax-keyword">new</span> <span class="syntax-function">Zero</span>({ apiKey: process.env.ZERO_KEY });</div>
             <div class="code-line"></div>
-            <div class="code-line"><span class="syntax-comment">// Generate intelligent responses in one line</span></div>
+            <div class="code-line"><span class="syntax-comment">// Hasilkan respons cerdas dalam satu baris</span></div>
             <div class="code-line"><span class="syntax-keyword">const</span> response = <span class="syntax-keyword">await</span> client.<span class="syntax-function">generate</span>({</div>
-            <div class="code-line">  prompt: <span class="syntax-string">"Explain quantum computing"</span>,</div>
-            <div class="code-line">  model: <span class="syntax-string">"nexus-pro"</span></div>
+            <div class="code-line">  prompt: <span class="syntax-string">"Jelaskan komputasi kuantum"</span>,</div>
+            <div class="code-line">  model: <span class="syntax-string">"zero-pro"</span></div>
             <div class="code-line">});</div>
             <div class="code-line"></div>
             <div class="code-line">console.<span class="syntax-function">log</span>(response.text);</div>
@@ -473,33 +473,33 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 reveal">
         <div class="stat-item">
           <div class="stat-number font-display" data-target="50">0</div>
-          <div class="text-[var(--muted)] text-sm mt-2">Billion API calls/month</div>
+          <div class="text-[var(--muted)] text-sm mt-2">Miliar panggilan API/bulan</div>
         </div>
         <div class="stat-item">
           <div class="stat-number font-display" data-target="99">0</div>
-          <div class="text-[var(--muted)] text-sm mt-2">% Uptime SLA</div>
+          <div class="text-[var(--muted)] text-sm mt-2">% Waktu aktif SLA</div>
         </div>
         <div class="stat-item">
           <div class="stat-number font-display" data-target="150">0</div>
-          <div class="text-[var(--muted)] text-sm mt-2">K+ Developers</div>
+          <div class="text-[var(--muted)] text-sm mt-2">Ribu+ Pengembang</div>
         </div>
         <div class="stat-item">
           <div class="stat-number font-display" data-target="35">0</div>
-          <div class="text-[var(--muted)] text-sm mt-2">ms Avg latency</div>
+          <div class="text-[var(--muted)] text-sm mt-2">ms Latensi rata-rata</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="py-32 relative z-10">
+  <section id="fitur" class="py-32 relative z-10">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-20">
         <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 reveal">
-          Everything you need to ship AI
+          Segala yang Anda butuhkan untuk meluncurkan AI
         </h2>
         <p class="text-[var(--muted)] text-lg max-w-2xl mx-auto reveal reveal-delay-1">
-          From prototype to production, Nexus provides the building blocks for intelligent applications.
+          Dari prototipe hingga produksi, Zero menyediakan fondasi untuk aplikasi cerdas.
         </p>
       </div>
       
@@ -510,9 +510,9 @@
               <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
             </svg>
           </div>
-          <h3 class="font-display text-xl font-semibold mb-3">Lightning Fast</h3>
+          <h3 class="font-display text-xl font-semibold mb-3">Sangat Cepat</h3>
           <p class="text-[var(--muted)] text-sm leading-relaxed">
-            Edge-deployed inference with sub-50ms latency globally. Your users won't wait for intelligence.
+            Inferensi di edge dengan latensi di bawah 50ms secara global. Pengguna Anda tidak perlu menunggu kecerdasan.
           </p>
         </div>
         
@@ -524,9 +524,9 @@
               <path d="M9 21V9"/>
             </svg>
           </div>
-          <h3 class="font-display text-xl font-semibold mb-3">Developer First</h3>
+          <h3 class="font-display text-xl font-semibold mb-3">Pengembang Utama</h3>
           <p class="text-[var(--muted)] text-sm leading-relaxed">
-            Clean APIs, comprehensive SDKs, and extensive documentation. Build with tools you love.
+            API bersih, SDK komprehensif, dan dokumentasi lengkap. Bangun dengan alat yang Anda cintai.
           </p>
         </div>
         
@@ -536,9 +536,9 @@
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             </svg>
           </div>
-          <h3 class="font-display text-xl font-semibold mb-3">Enterprise Ready</h3>
+          <h3 class="font-display text-xl font-semibold mb-3">Siap Perusahaan</h3>
           <p class="text-[var(--muted)] text-sm leading-relaxed">
-            SOC2 compliant, GDPR ready, with advanced access controls and audit logging.
+            Sesuai SOC2, siap GDPR, dengan kontrol akses lanjutan dan log audit.
           </p>
         </div>
         
@@ -549,9 +549,9 @@
               <path d="M12 6v6l4 2"/>
             </svg>
           </div>
-          <h3 class="font-display text-xl font-semibold mb-3">Auto Scaling</h3>
+          <h3 class="font-display text-xl font-semibold mb-3">Otomatis Skalakan</h3>
           <p class="text-[var(--muted)] text-sm leading-relaxed">
-            Handle traffic spikes without breaking a sweat. From zero to millions of requests seamlessly.
+            Tangani lonjakan traffic tanpa hambatan. Dari nol hingga jutaan permintaan dengan mulus.
           </p>
         </div>
         
@@ -563,9 +563,9 @@
               <line x1="12" y1="22.08" x2="12" y2="12"/>
             </svg>
           </div>
-          <h3 class="font-display text-xl font-semibold mb-3">Model Library</h3>
+          <h3 class="font-display text-xl font-semibold mb-3">Perpustakaan Model</h3>
           <p class="text-[var(--muted)] text-sm leading-relaxed">
-            Access 50+ pre-trained models or fine-tune your own. One API, infinite possibilities.
+            Akses 50+ model terlatih atau sesuaikan model Anda sendiri. Satu API, kemungkinan tak terbatas.
           </p>
         </div>
         
@@ -577,9 +577,9 @@
               <path d="M6 20v-6"/>
             </svg>
           </div>
-          <h3 class="font-display text-xl font-semibold mb-3">Real-time Analytics</h3>
+          <h3 class="font-display text-xl font-semibold mb-3">Analitik Real-time</h3>
           <p class="text-[var(--muted)] text-sm leading-relaxed">
-            Monitor usage, costs, and performance in real-time. Optimize with actionable insights.
+            Pantau penggunaan, biaya, dan performa secara real-time. Optimalkan dengan wawasan yang dapat ditindaklanjuti.
           </p>
         </div>
       </div>
@@ -587,16 +587,16 @@
   </section>
 
   <!-- Developer Section -->
-  <section id="developers" class="py-32 relative z-10">
+  <section id="pengembang" class="py-32 relative z-10">
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid lg:grid-cols-2 gap-16 items-center">
         <div class="reveal">
-          <span class="text-[var(--accent)] font-medium text-sm tracking-wide uppercase">For Developers</span>
+          <span class="text-[var(--accent)] font-medium text-sm tracking-wide uppercase">Untuk Pengembang</span>
           <h2 class="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Ship in minutes,<br>not months
+            Luncurkan dalam menit,<br>bukan bulan
           </h2>
           <p class="text-[var(--muted)] text-lg mb-8">
-            We've abstracted away the complexity of ML infrastructure. Focus on building great products, not managing servers.
+            Kami telah mengabstraksi kompleksitas infrastruktur ML. Fokus pada membangun produk hebat, bukan mengelola server.
           </p>
           
           <div class="space-y-6">
@@ -607,8 +607,8 @@
                 </svg>
               </div>
               <div>
-                <h4 class="font-semibold mb-1">Simple Integration</h4>
-                <p class="text-[var(--muted)] text-sm">Install our SDK and make your first API call in under 60 seconds.</p>
+                <h4 class="font-semibold mb-1">Integrasi Sederhana</h4>
+                <p class="text-[var(--muted)] text-sm">Pasang SDK kami dan lakukan panggilan API pertama dalam waktu kurang dari 60 detik.</p>
               </div>
             </div>
             
@@ -619,8 +619,8 @@
                 </svg>
               </div>
               <div>
-                <h4 class="font-semibold mb-1">Type-safe APIs</h4>
-                <p class="text-[var(--muted)] text-sm">Full TypeScript support with auto-completion in your IDE.</p>
+                <h4 class="font-semibold mb-1">API Type-safe</h4>
+                <p class="text-[var(--muted)] text-sm">Dukungan TypeScript penuh dengan auto-completion di IDE Anda.</p>
               </div>
             </div>
             
@@ -631,8 +631,8 @@
                 </svg>
               </div>
               <div>
-                <h4 class="font-semibold mb-1">Production Ready</h4>
-                <p class="text-[var(--muted)] text-sm">Built-in rate limiting, retries, and fallbacks for reliability.</p>
+                <h4 class="font-semibold mb-1">Siap Produksi</h4>
+                <p class="text-[var(--muted)] text-sm">Batasan rate, percobaan ulang, dan fallback bawaan untuk keandalan.</p>
               </div>
             </div>
           </div>
@@ -647,15 +647,15 @@
               <span class="text-[var(--muted)] text-xs ml-4">Terminal</span>
             </div>
             <div class="code-content">
-              <div class="text-[var(--muted)]">$ npm install @nexus/ai</div>
-              <div class="mt-4 text-[var(--muted)]">$ nexus init</div>
-              <div class="mt-2 text-[var(--accent)]">✓ Project initialized</div>
-              <div class="mt-2 text-[var(--accent)]">✓ API key configured</div>
-              <div class="mt-2 text-[var(--accent)]">✓ Ready to build!</div>
-              <div class="mt-4 text-[var(--muted)]">$ nexus deploy</div>
-              <div class="mt-2">Deploying to production...</div>
-              <div class="mt-2 text-[var(--accent)]">✓ Deployed in 12s</div>
-              <div class="mt-2">https://your-app.nexus.ai</div>
+              <div class="text-[var(--muted)]">$ npm install @zero/ai</div>
+              <div class="mt-4 text-[var(--muted)]">$ zero init</div>
+              <div class="mt-2 text-[var(--accent)]">✓ Proyek diinisialisasi</div>
+              <div class="mt-2 text-[var(--accent)]">✓ Kunci API dikonfigurasi</div>
+              <div class="mt-2 text-[var(--accent)]">✓ Siap membangun!</div>
+              <div class="mt-4 text-[var(--muted)]">$ zero deploy</div>
+              <div class="mt-2">Menyebarkan ke produksi...</div>
+              <div class="mt-2 text-[var(--accent)]">✓ Disebar dalam 12 detik</div>
+              <div class="mt-2">https://aplikasi-anda.zero.ai</div>
             </div>
           </div>
         </div>
@@ -668,15 +668,15 @@
     <div class="max-w-4xl mx-auto px-6">
       <div class="testimonial-card reveal">
         <p class="text-xl md:text-2xl leading-relaxed mb-8 relative z-10">
-          "Nexus transformed how we build AI features. What used to take our team weeks now takes hours. The developer experience is unmatched."
+          "Zero mengubah cara kami membangun fitur AI. Yang dulu membutuhkan tim kami berminggu-minggu, kini hanya butuh beberapa jam. Pengalaman pengembangnya tak tertandingi."
         </p>
         <div class="flex items-center gap-4">
           <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[var(--accent)] to-[#0088ff] flex items-center justify-center text-black font-bold text-lg">
-            SK
+            AS
           </div>
           <div>
-            <div class="font-semibold">Sarah Kim</div>
-            <div class="text-[var(--muted)] text-sm">CTO at Velocity</div>
+            <div class="font-semibold">Ahmad Santoso</div>
+            <div class="text-[var(--muted)] text-sm">CTO di Velocity Indonesia</div>
           </div>
         </div>
       </div>
@@ -687,14 +687,14 @@
   <section class="cta-section py-32 relative z-10">
     <div class="max-w-4xl mx-auto px-6 text-center">
       <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 reveal">
-        Ready to build the future?
+        Siap membangun masa depan?
       </h2>
       <p class="text-[var(--muted)] text-lg mb-10 reveal reveal-delay-1">
-        Join thousands of developers shipping intelligent products with Nexus. Start free, scale when ready.
+        Bergabunglah dengan ribuan pengembang yang meluncurkan produk cerdas dengan Zero. Mulai gratis, skala saat siap.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center reveal reveal-delay-2">
-        <button class="btn-primary text-base">Start Building Free</button>
-        <button class="btn-secondary text-base">Talk to Sales</button>
+        <button class="btn-primary text-base">Mulai Bangun Gratis</button>
+        <button class="btn-secondary text-base">Hubungi Penjualan</button>
       </div>
     </div>
   </section>
@@ -707,57 +707,57 @@
           <a href="#" class="flex items-center gap-3 mb-4">
             <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--accent)] to-[#0088ff] flex items-center justify-center">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-black">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                <path d="M2 17l10 5 10-5"/>
-                <path d="M2 12l10 5 10-5"/>
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="16"/>
+                <line x1="8" y1="12" x2="16" y2="12"/>
               </svg>
             </div>
-            <span class="font-display font-bold text-xl">Nexus</span>
+            <span class="font-display font-bold text-xl">Zero</span>
           </a>
           <p class="text-[var(--muted)] text-sm max-w-xs">
-            The AI infrastructure for modern applications. Build faster, scale confidently.
+            Infrastruktur AI untuk aplikasi modern. Bangun lebih cepat, skala dengan percaya diri.
           </p>
         </div>
         
         <div>
-          <h4 class="font-semibold mb-4 text-sm">Product</h4>
+          <h4 class="font-semibold mb-4 text-sm">Produk</h4>
           <ul class="space-y-3 text-sm">
-            <li><a href="#" class="footer-link">Features</a></li>
-            <li><a href="#" class="footer-link">Pricing</a></li>
-            <li><a href="#" class="footer-link">Changelog</a></li>
-            <li><a href="#" class="footer-link">Roadmap</a></li>
+            <li><a href="#" class="footer-link">Fitur</a></li>
+            <li><a href="#" class="footer-link">Harga</a></li>
+            <li><a href="#" class="footer-link">Log Perubahan</a></li>
+            <li><a href="#" class="footer-link">Peta Jalan</a></li>
           </ul>
         </div>
         
         <div>
-          <h4 class="font-semibold mb-4 text-sm">Resources</h4>
+          <h4 class="font-semibold mb-4 text-sm">Sumber Daya</h4>
           <ul class="space-y-3 text-sm">
-            <li><a href="#" class="footer-link">Documentation</a></li>
-            <li><a href="#" class="footer-link">API Reference</a></li>
-            <li><a href="#" class="footer-link">Guides</a></li>
+            <li><a href="#" class="footer-link">Dokumentasi</a></li>
+            <li><a href="#" class="footer-link">Referensi API</a></li>
+            <li><a href="#" class="footer-link">Panduan</a></li>
             <li><a href="#" class="footer-link">Blog</a></li>
           </ul>
         </div>
         
         <div>
-          <h4 class="font-semibold mb-4 text-sm">Company</h4>
+          <h4 class="font-semibold mb-4 text-sm">Perusahaan</h4>
           <ul class="space-y-3 text-sm">
-            <li><a href="#" class="footer-link">About</a></li>
-            <li><a href="#" class="footer-link">Careers</a></li>
-            <li><a href="#" class="footer-link">Contact</a></li>
-            <li><a href="#" class="footer-link">Press</a></li>
+            <li><a href="#" class="footer-link">Tentang</a></li>
+            <li><a href="#" class="footer-link">Karir</a></li>
+            <li><a href="#" class="footer-link">Kontak</a></li>
+            <li><a href="#" class="footer-link">Pers</a></li>
           </ul>
         </div>
       </div>
       
       <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-[var(--border)]">
         <p class="text-[var(--muted)] text-sm">
-          2024 Nexus AI. All rights reserved.
+          2024 Zero AI. Seluruh hak cipta dilindungi.
         </p>
         <div class="flex gap-6 mt-4 md:mt-0">
-          <a href="#" class="footer-link text-sm">Privacy</a>
-          <a href="#" class="footer-link text-sm">Terms</a>
-          <a href="#" class="footer-link text-sm">Security</a>
+          <a href="#" class="footer-link text-sm">Privasi</a>
+          <a href="#" class="footer-link text-sm">Ketentuan</a>
+          <a href="#" class="footer-link text-sm">Keamanan</a>
         </div>
       </div>
     </div>
@@ -902,7 +902,7 @@
             const timer = setInterval(() => {
               current += increment;
               if (current >= target) {
-                entry.target.textContent = target + (entry.target.closest('.stat-item').querySelector('.text-\\[var\\(--muted\\)\\]').textContent.includes('%') ? '' : '+');
+                entry.target.textContent = target;
                 clearInterval(timer);
               } else {
                 entry.target.textContent = Math.floor(current);
